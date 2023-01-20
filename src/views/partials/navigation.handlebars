@@ -1,0 +1,27 @@
+{{!creo toda la navegación y despues la exporto a main}}
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Enlaces favoritos</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        {{!ml-auto para colocar los botones a la derecha }}
+        {{!Los li son los items de la navegaciòn}}
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Enlaces
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/links">Ver enlaces</a></li>
+            <li><a class="dropdown-item" href="/links/add">Agregar enlace</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/links/edit">Editar enlace</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
